@@ -38,8 +38,8 @@ function doPart(input: string): string | number {
             }
             map[y][x] = mxy + 1;
 
-            x = x < x2 ? x + 1 : x > x2 ? x - 1 : x;
-            y = y < y2 ? y + 1 : y > y2 ? y - 1 : y;
+            x += x < x2 ? 1 : x > x2 ? -1 : 0;
+            y += y < y2 ? 1 : y > y2 ? -1 : 0;
 
             done = last;
             last = x === x2 && y === y2;
