@@ -36,10 +36,7 @@ function doPart(input: string): string | number {
                     map[y] = my;
                 }
                 let mxy: number = my[x];
-                if (mxy === undefined) {
-                    mxy = 0;
-                }
-                map[y][x] = mxy + 1;
+                map[y][x] = mxy === undefined ? 1 : mxy + 1;
             }
         }
     });
