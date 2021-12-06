@@ -21,10 +21,10 @@ const TEST1: string = `7,4,9,5,11,17,23,2,0,14,21,24,10,16,13,6,15,25,12,22,18,2
  2  0 12  3  7`;
 
 function doPart(input: string): string | number {
-    const lines: string[] = input.split('\n\n').map(s => s);
+    const [draft_s, ...lines]: string[] = input.split('\n\n').map(s => s);
 
-    const draft: number[] = lines[0].split(',').map(s => Number.parseInt(s));
-    const cards: (number | null)[][][] = lines.slice(1).map(c => c.split('\n').map(n => n.split(' ').filter(s => s != '').map(nn => Number.parseInt(nn))));
+    const draft: number[] = draft_s.split(',').map(s => Number.parseInt(s));
+    const cards: (number | null)[][][] = lines.map(c => c.split('\n').map(n => n.split(' ').filter(s => s != '').map(nn => Number.parseInt(nn))));
 
     let result: number = 0;
 
