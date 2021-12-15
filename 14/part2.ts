@@ -79,12 +79,3 @@ void (() => {
     go(TEST1, 2188189693529);
     go(INPUT);
 })();
-
-/*
-const RE: RegExp = /(\d+)\s<->\s(.+)/g;
-
-let match: RegExpMatchArray | null;
-while ((match = RE.exec(input)) !== null) {
-    const [, id, ids] = match;
-}
-*/
