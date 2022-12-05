@@ -7,5 +7,7 @@
     "files.trimTrailingWhitespace": false,
     "files.insertFinalNewline": true,
     "typescript.preferences.quoteStyle": "single",
-    "deno.enable": true
+    "deno.enable": true,
+    "deno.lint": true,
+    "deno.unstable": false
 }
