@@ -171,7 +171,7 @@ void (() => {
     go('[[[[5,0],[7,4]],[5,5]],[6,6]]', true, 1137);
     go('[[[[8,7],[7,7]],[[8,6],[7,7]]],[[[0,7],[6,6]],[8,7]]]', true, 3488);
     go('[[[[6,6],[7,6]],[[7,7],[7,0]]],[[[7,7],[7,7]],[[7,8],[9,9]]]]', true, 4140);
-    
+
     const snailfish: string | number = doPart(INPUT);
     console.log(calcMagnitude(snailfish as string));
 })();
