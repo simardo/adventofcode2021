@@ -175,4 +175,3 @@ void (() => {
     const snailfish: string | number = doPart(INPUT);
     console.log(calcMagnitude(snailfish as string));
 })();
-
